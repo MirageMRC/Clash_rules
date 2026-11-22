@@ -1,0 +1,7 @@
+# ColorOS / OPPO / 一加 系统更新拦截
+# mihomo 在 Android 上对 PROCESS-NAME 按“包名”匹配，这里直接写包名
+# com.oplus.ota        软件更新（ColorOS 12+，下载/安装都由它发起）
+# com.oplus.romupdate  组件/配置更新
+# 注意：com.oplus.sau 是 system uid(1000) 的系统服务，按包名匹配不可靠，且误拦会波及系统网络，故不放进来
+PROCESS-NAME,com.oplus.ota
+PROCESS-NAME,com.oplus.romupdate
